@@ -52,6 +52,9 @@ function holeInserat() {
 
     let userID = localStorage.getItem('userID');
     let token = localStorage.getItem('token');
+    
+    let formData = new FormData();
+    formData.append('userID', userID);
 
     //Link von Marions Server 
     fetch("https://420149-3.web.fhgr.ch/php/holeInserat.php",
